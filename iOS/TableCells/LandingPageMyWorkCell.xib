@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="122" id="cxk-wN-pdQ" customClass="LandingPageMyWorkCell">
+            <rect key="frame" x="0.0" y="0.0" width="578" height="122"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxk-wN-pdQ" id="YTl-1W-gDM">
+                <rect key="frame" x="0.0" y="0.0" width="578" height="121"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" id="57" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                        <rect key="frame" x="0.0" y="0.0" width="381" height="121"/>
+                        <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedWhite" white="0.666666666666667" alpha="1"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="BUName" lineBreakMode="tailTruncation" minimumFontSize="10" id="65" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="60" y="26" width="260" height="64"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint id="77" firstItem="57" firstAttribute="trailing" secondItem="65" secondAttribute="trailing" constant="61"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" id="58" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                        <rect key="frame" x="389" y="0.0" width="189" height="121"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="63" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="129" y="46" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="SideButton_TouchUpInside:" destination="cxk-wN-pdQ" id="66" eventType="touchUpInside"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="84" firstItem="58" firstAttribute="trailing" secondItem="63" secondAttribute="trailing" constant="14"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint id="59" firstItem="58" firstAttribute="trailing" secondItem="YTl-1W-gDM" secondAttribute="trailing"/>
+                    <constraint id="61" firstItem="58" firstAttribute="leading" secondItem="57" secondAttribute="trailing" constant="8"/>
+                    <constraint id="62" firstItem="58" firstAttribute="trailing" secondItem="YTl-1W-gDM" secondAttribute="trailing"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <accessibility key="accessibilityConfiguration">
+                <bool key="isElement" value="NO"/>
+            </accessibility>
+            <connections>
+                <outlet property="TrailingView" destination="58" id="name-outlet-58"/>
+                <outlet property="LeadingView" destination="57" id="name-outlet-57"/>
+                <outlet property="sideButton" destination="63" id="name-outlet-63"/>
+                <outlet property="BUNameValue" destination="65" id="name-outlet-65"/>
+            </connections>
+            <point key="canvasLocation" x="-190" y="6"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Images/SlideButton.png" width="24" height="121"/>
+        <image name="Images/watchlistdull.png" width="38" height="38"/>
+        <image name="Images/tick.png" width="111" height="111"/>
+        <image name="Images/back.png" width="95" height="95"/>
+        <image name="Images/next.jpeg" width="108" height="108"/>
+        <image name="Images/placeholder.png" width="225" height="225"/>
+        <image name="Images/random.png" width="200" height="215"/>
+        <image name="NotifyMenu/Images/approve.png" width="46" height="46"/>
+        <image name="NotifyMenu/Images/clear.png" width="46" height="46"/>
+        <image name="NotifyMenu/Images/email.png" width="46" height="35"/>
+        <image name="NotifyMenu/Images/note.png" width="46" height="46"/>
+        <image name="NotifyMenu/Images/reject.png" width="46" height="46"/>
+        <image name="NotifyMenu/Images/route.png" width="46" height="46"/>
+        <image name="Images/user.png" width="72" height="71"/>
+        <image name="Images/watchList.png" width="39" height="39"/>
+    </resources>
+</document>
